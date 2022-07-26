@@ -1,0 +1,107 @@
+name: biovillage
+description: BioVillage App
+version: 1.0.18+34
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+  flutter: ^2.2.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_dotenv: ^2.1.0
+  http: ^0.12.2
+  flutter_redux: ^0.8.2
+  redux_thunk: ^0.4.0
+  overlay_support: ^1.0.5
+  yandex_mapkit: ^1.0.1
+  google_maps_webservice: ^0.0.18
+  flutter_swiper: ^1.1.6
+  auto_animated: ^2.1.0
+  flutter_group_sliver: ^0.0.2
+  flutter_masked_text: ^0.8.0
+  flutter_i18n: ^0.22.3
+  shared_preferences: ^2.0.5
+  sentry: ^3.0.1
+  rive: ^0.6.2
+  share: ^0.6.5+4
+  url_launcher: ^6.0.3
+  flutter_svg: ^0.21.0+1
+  flutter_slidable: ^0.5.7
+  cached_network_image: ^2.5.0
+  flutter_cache_manager: ^2.1.2
+  yandex_kassa: ^1.0.2
+  flutter_localizations:
+    sdk: flutter
+  webview_flutter: ^1.0.7
+  appsflyer_sdk: ^6.2.4+4-nullsafety
+  autocomplete_textfield: ^1.7.3
+  facebook_app_events: ^0.12.0
+  flutter_screenutil: ^5.0.0+2
+  package_info: ^2.0.2
+  in_app_update: ^2.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+# APP ICON GENERATOR (Есть конфликт с другмими пакетами)
+# dev_dependencies: flutter_launcher_icons: "^0.8.0"
+# flutter_icons:
+#   image_path: assets/img/app-icon-small.png
+#   adaptive_icon_foreground: assets/img/app-icon-small.png
+#   adaptive_icon_background: '#ffffff'
+#   android: true
+#   ios: true
+
+flutter:
+  # GENERAL:
+  uses-material-design: true
+  # ASSETS:
+  assets:
+    - .env
+    - assets/i18n/ru/
+    - assets/bv_loader-3.riv
+    # Images:
+    - assets/img/splash-screen.png
+    - assets/img/logo.png
+    - assets/img/logo_small.png
+    - assets/img/logo_preloader.png
+    - assets/img/logo_success-page.png
+    - assets/img/delivery-img-1.jpg
+    - assets/img/about-company-img-1.jpg
+    # Extra icons:
+    - assets/img/icons/eco.svg
+    - assets/img/icons/vk.svg
+    - assets/img/icons/instagram.png # Svg-плагин не поддерживает градиенты, поэтому png@x3
+    - assets/img/icons/telegram.svg
+    - assets/img/icons/applepay-mark.svg
+    - assets/img/icons/googlepay-mark.svg
+    - assets/img/icons/mastercard.svg
+    - assets/img/icons/visa.svg
+    - assets/img/icons/cash.svg
+  # FONTS:
+  fonts:
+    - family: Montserrat
+      fonts:
+        - asset: assets/fonts/Montserrat/Montserrat-Thin.ttf
+          weight: 100
+        - asset: assets/fonts/Montserrat/Montserrat-ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/Montserrat/Montserrat-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Montserrat/Montserrat-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Montserrat/Montserrat-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Montserrat/Montserrat-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Montserrat/Montserrat-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Montserrat/Montserrat-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/Montserrat/Montserrat-Black.ttf
+          weight: 900
+    - family:  BvIcons
+      fonts:
+        - asset: assets/fonts/BvIcons/BvIcons.ttf
